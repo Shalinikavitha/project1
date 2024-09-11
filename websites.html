@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        
+        }
+nav{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+nav .logo{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo .title a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+font-weight: bold;
+}
+.logo ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.logo ul li{
+    margin-left: 25px;
+}
+.logo ul li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo ul li a:hover{
+  background-color:white;
+
+}
+
+    
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  padding: 100px;
+  margin-bottom: 20px;
+  background-image: url('images (1).jpg');
+}
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: wheat;
+  padding: 40px;
+  
+}
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: sandybrown;
+  padding: 20px;
+  
+}
+.btn button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: sandybrown;
+    cursor: pointer;
+    font-weight: bold;
+    border-color:red;
+}
+.btn .hover-button:hover{
+  background-color: aqua;
+  color: blue;
+}
+
+
+
+footer{
+    margin-top:20px;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;   
+}
+@media screen and (max-width: 70%) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 30%) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+        <div class="title">
+            <header>
+                <h1>MASTER MIND</h1>
+            </header>
+        </div>
+            <ul>
+                <li><a href ="#">HOME</a></li>
+                <li><a href ="#">ABOUT</a></li>
+                <li><a href ="#">GALLERY</a></li>
+                <li><a href ="#">CONTACT US</a></li>
+            </ul>
+        </div>
+
+<div class="row">
+  <div class="side">
+    <p>ABOUT US</p>
+    <h1>"Impossible is nothing" </h1>
+    <p>This is so damn true. You just have to try hard & make the Impossible things Possible sometimes. Sometimes, you have to wait for months even for the right time. But don't lose hope & never give up. Always try to achieve your Goals.</p>
+
+  </div>
+  <div class="main">
+    <h2><center>Master Mind Technology</center></h2>
+    <p>As we embrace the challenges and opportunities that 2024 brings, the symbiotic relationship between technology leadership and process optimization is poised to reshape how businesses operate.</p>
+    <div class="btn">
+      <button class="hover-button">watch video </button>
+      <button class="change-button">subscribe</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>www.mastermindtechno.in</p>
+</footer>
+</body>
+</html>
