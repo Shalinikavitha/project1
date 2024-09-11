@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Mind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #076bc9;
+            color: rgb(248, 8, 8);
+            padding: 25px;
+            text-align: center;
+            font-size:80px;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        /* Main Content Area */
+        .container {
+            flex: 1;
+            display: flex;
+            background-image: url('nature-water-landscape-background.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color:aqua;
+        }
+
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:rgb(255, 81, 0);
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        /* Login Form */
+        .login-form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            background-image: url('ab28443f3734a27de8c1b901f088a3aa.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color:rgb(153, 192, 149);
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3a3a3a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .login-form a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Master Mind</h1>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <div class="left">
+            <p>Your Success is Our Mission.</p>
+        </div>
+        <div class="right">
+            <form class="login-form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <a href="http://127.0.0.1:5500/prgm4.html">
+                <button type="button">Submit</button>
+                </a>
+               
+                <a href="http://127.0.0.1:5500/prgm2.html">Register</a>
+                <a href="http://127.0.0.1:5500/prgm3.html">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
